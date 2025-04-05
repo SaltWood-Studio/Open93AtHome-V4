@@ -1,0 +1,19 @@
+{
+  "name": "open93athome-v4",
+  "version": "4.0.0",
+  "description": "Open93AtHome",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --enable-source-maps dist/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SaltWood-Studio/Open93AtHome-V4.git"
+  },
+  "author": "SALTWOOD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SaltWood-Studio/Open93AtHome-V4/issues"
+  },
+  "homepage": "https://github.com/SaltWood-Studio/Open93AtHome-V4#readme"
+}
