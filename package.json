@@ -4,7 +4,9 @@
   "description": "Open93AtHome",
   "main": "index.js",
   "scripts": {
-    "test": "node --enable-source-maps dist/test.js"
+    "test": "node --enable-source-maps dist/test.js",
+    "build": "tsc",
+    "start": "node --enable-source-maps dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/SaltWood-Studio/Open93AtHome-V4/issues"
   },
-  "homepage": "https://github.com/SaltWood-Studio/Open93AtHome-V4#readme"
+  "homepage": "https://github.com/SaltWood-Studio/Open93AtHome-V4#readme",
+  "dependencies": {
+    "@tsconfig/node20": "^20.1.5",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.17",
+    "express": "^5.1.0"
+  }
 }
