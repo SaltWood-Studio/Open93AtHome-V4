@@ -20,8 +20,14 @@
   "homepage": "https://github.com/SaltWood-Studio/Open93AtHome-V4#readme",
   "dependencies": {
     "@tsconfig/node20": "^20.1.5",
-    "@types/express": "^5.0.1",
+    "@types/express": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.15.17",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.0",
+    "reflect-metadata": "^0.2.2",
+    "socket.io": "^4.8.1",
+    "typeorm": "^0.3.24"
   }
 }
