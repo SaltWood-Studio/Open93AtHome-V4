@@ -72,11 +72,12 @@ export class ServerInstance {
             const data = validateObject({
                 clusterId: "",
                 signature: "",
-                challenge: ""
+                challenge: "",
+                token: ""
             }, req.body);
 
-            if (req.body.token) {
-                const token = String(req.body.token);
+            if (data.token) {
+                const token = String(data.token);
                 const claims = this.jwt.verifyToken(token, 'cluster') as { clusterId: string };
                 if (!(await this.dataSource.manager.findOne(ClusterEntity, { where: { clusterId: claims.clusterId } }))) {
                     res.status(401).json({ error: "Cluster not found. But, how did you done it?" });
@@ -117,7 +118,7 @@ export class ServerInstance {
                 });
                 return;
             }
-            
+
             res.status(404).json({
                 error: "Cluster not found."
             });

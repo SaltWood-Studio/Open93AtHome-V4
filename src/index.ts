@@ -15,5 +15,5 @@ const dataSource = new DataSource({
     ]
 });
 
-const instance = new ServerInstance( dataSource);
+const instance = new ServerInstance(dataSource);
 instance.start();
